@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 2em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px; 
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: rgb(144, 76, 217);
+            color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(144, 76, 217);
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA DE TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+            TR, TD, TH
+            TBODY
+            TR, TD, TH
+            TFOOT
+            TR, TD, TH
+     -->
+     <table>
+        <caption>População dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8 794 957</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="numero"><strong>88 411 238</strong></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
