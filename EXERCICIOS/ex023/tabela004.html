@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        caption {
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de filmes</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Sofia</td>
+                <td>Barbie</td>
+                <td>Toy story</td>
+                <td>Ladybug</td>
+            </tr>
+            <tr>
+                <td>Patricia</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                <td>Coringa</td>
+            </tr>
+            <tr>
+                <td>Juliana</td>
+                <td>Lego</td>
+                <td>Frozen</td>
+                <td>Cinderela</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Gabriel</td>
+                <td>Ben 10</td>
+                <td>Scooby Doo</td>
+                <td>A Órfã</td>
+            </tr>
+            <tr>
+                <td>Junior</td>
+                <td>Futurama</td>
+                <td>Simpsons</td>
+                <td>Premonição</td>
+            </tr>
+            <tr>
+                <td>Wagner</td>
+                <td>Dumbo</td>
+                <td>Pinóquio</td>
+                <td>Mulan</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
