@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iestado">Estado: </label>
+            <select name="estado" id="iestado">
+                <option value="" selected>--- ESCOLHA ---</option>
+                <optgroup label="Região 1">
+                    <option value="AC">Acre</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP" >São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região 2">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ipro">Profissão:</label>
+            <input type="text" name="pro" id="iprof" list="profissao">
+            <datalist id="profissao">
+                <option value="PROF">Professor</option>
+                <option value="RH">Recursos Humanos</option>
+                <option value="ST">Segurança do Trabalho</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
